@@ -14,6 +14,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::redirect('/','users');
 
 //ruta listado usuarios
 Route::get('users', [UserController::class, 'index'])->name('users.index');
